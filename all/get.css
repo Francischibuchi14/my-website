@@ -1,0 +1,112 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+.container{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container i:nth-child(1){
+    border-radius: 62% 38% 78% 22% / 46% 30% 70% 54% ;
+    animation: animate 6s linear infinite;
+}
+.container i:nth-child(2){
+    border-radius: 25% 75% 22% 78% / 73% 30% 70% 27% ;
+    animation: animate 4s linear infinite;
+}
+.container i:nth-child(3){
+    border-radius:  63% 37% 44% 56% / 56% 38% 62% 44% ;
+    animation: animate2 10s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.container i{
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+}
+.container:hover i{
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+.container .login{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .login h2{
+    font-size: 2rem;
+    color: #fff;
+}
+.container .login .inputbx{
+    position: relative;
+    width: 100%;
+}
+.container .login .inputbx input{
+    position: relative;
+    width: 100%;
+    padding: 12px 20px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+}
+.container .login .inputbx input::placeholder{
+    color: rgb(237, 228, 228);
+}
+.container .login .inputbx input[type="submit"]{
+    background: linear-gradient(45deg,#ff357a,#fff172);
+    border: none;
+    cursor: pointer;
+}
+.container .login .link{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.container .login .link a{
+    color: #fff;
+    text-decoration: none;
+}

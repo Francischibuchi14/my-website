@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="car.css">
+    <link rel="stylesheet" href="/index.html">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo" style="display: flex;">
+                <img src="/download.jpg" style="height: 40px; width: 40px;" alt="">
+                <h1 style="padding-top: 8px;">WebDesign</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Beautiful Web Design, Simplified</h2>
+           
+            <p>Create modern and responsive websites with ease. Transform your ideas into reality.</p>
+            <button onclick="scrollToSection('features')">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Responsive Design</h3>
+                    <p>Our layouts adapt to any screen size, providing an optimal experience on mobile, tablet, and desktop.</p>
+                </div>
+                <div class="feature">
+                    <h3>Easy to Customize</h3>
+                    <p>With our tools, making adjustments to fit your style is quick and easy.</p>
+                </div>
+                <div class="feature">
+                    <h3>Fast Performance</h3>
+                    <p>We ensure top-tier performance to keep your site running smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a team of passionate web developers, designers, and creators dedicated to crafting the best digital experiences. Our mission is to empower businesses and individuals with stunning web designs that are both beautiful and functional.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+            <form>
+                <button type="submit"><a href="/get.html">click here</a></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WebDesign. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="car.js"></script>
+</body>
+</html>

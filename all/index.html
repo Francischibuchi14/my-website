@@ -1,0 +1,68 @@
+<a href="">Task: Create a Student Grade Management System
+You are tasked with building a basic grade management system for a class. The system will store student information and their grades for various subjects, and it will allow you to calculate average grades, determine who passed or failed, and list all students with their performance.
+Requirements:
+Student Data:
+Each student should have the following properties: name, id, and an object grades that stores subjects as keys (e.g., "Math", "English") and the respective scores as values.
+Store the students in an array of objects.
+Functionalities to Implement:
+Add a new student: (DON'T DO THIS NOW)
+addStudent that takes in a new student object and adds them to the students array if the id is unique.
+Update grades for a student:
+updateGrades that accepts a student id, a subject, and a new grade, and updates the student’s grade for that subject.
+Calculate the average grade for a student:
+calculateAverage that accepts a student id and returns their average grade across all subjects.
+Determine if a student has passed or failed:
+If the average grade is 50 or above, the student passes; otherwise, the student fails.
+Display all students with their average grades:
+displayStudents that loops through the students array, calculates each student's average grade, and displays their name and average grade.
+Constraints:
+Ensure that grades are between 0 and 100.
+Use conditionals to handle cases such as invalid id or missing student data.
+Use loops to handle operations across multiple subjects and students.</a>
+
+
+//<a></a>//
+Basic Restaurant Order System
+You are tasked with building a simple order system for a small restaurant. The system should allow a waiter to take orders, calculate the total bill, and show the order summary.
+Requirements:
+Menu Data:
+Create a menu as an array of objects. Each object represents a dish with name and price.
+Functionalities to Implement:
+Take an order:
+Create a function takeOrder that takes a customer ID and an array of dish names. Use a loop to check if each dish exists in the menu and then store the order in a list.
+Calculate the total bill:
+Create a function calculateTotal that accepts a customer ID and uses a loop to sum up the total price of the ordered dishes.
+Show order summary:
+Create a function showOrder that accepts a customer ID and displays the customer’s order, showing the dish names and total price.
+///////////////////////////////////
+
+
+
+
+///////////////////////[[[[[[[[[[[[[[[[;'''']]]]]]]]]]]]]]]]
+Task 1: Library Book Management System
+You are tasked with creating a library management system that allows users to add, search for, and borrow books. The system should store information about books and manage their availability.
+Requirements:
+Book Data:
+Store each book’s information (title, author, availability) in an array of objects. Each object should contain title (a string), author (a string), and isAvailable (a boolean indicating if the book is available).
+Functionalities to Implement:
+Add a book:
+Create a function addBook that takes the title and author as input and adds the book to the array. The isAvailable status should be set to true initially.
+Search for a book:
+Create a function searchBook that takes the title of the book as input, converts the input to lowercase, and checks if the book exists in the array (ignore case sensitivity). If the book exists, display its title, author, and availability status. If not, display a message saying the book is not found.
+CBorrow a book:
+reate a function borrowBook that takes the title of a book as input. If the book is available (isAvailable: true), change its status to false and display a message that the book has been borrowed. If it’s already borrowed, display a message that the book is not available.
+;o-----------------------------------
+Task 2: Shopping Cart System
+You are tasked with creating a simple shopping cart system. This system will allow users to add items to a cart, remove items, and calculate the total cost.
+Requirements:
+Product Data:
+Store each product’s information (name, price, and quantity) in an array of objects. Each object should contain name (a string), price (a number), and quantity (the number of items added to the cart).
+Functionalities to Implement:
+Add product to cart:
+c
+Create a function removeFromCart that takes the product name as input and removes the product from the cart.
+Calculate total cost:
+Create a function calculateTotal that loops through the cart and calculates the total cost (price * quantity for each product).
+List items in cart:
+Create a function listCart that lists all products in the cart, including their name, price, and quantity.
